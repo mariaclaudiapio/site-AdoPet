@@ -1,0 +1,132 @@
+:root {
+    --azul: #3772FF;
+    --cinza-claro: #F6F6F6;
+    --cinza-medio: #BCBCBC;
+    --cinza-escuro: #737380;
+    --coral: #FC7071;
+    --branco: #FFFFFF;
+    --verde: #36D6AD;
+
+    --fonte-principal: 'Poppins', sans-serif;
+    --fonte-secundaria: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+    background-image: url('../img/patas.svg'),
+    url('../img/forma_1.svg'), 
+    url('../img/forma_2_inversa.svg');    
+    background-repeat: no-repeat;
+    background-position: top right, top left, bottom 9em left;
+    min-height: 100vh; 
+    font-family: var(--fonte-principal);
+    color: var(--branco);   
+}
+
+.bg-branca {
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho {
+    padding: 3em;
+}
+
+.cabecalho__imagem {
+    padding-right: 3em;
+}
+
+.logo-azul {
+    padding: 1.3em;
+}
+
+.conteudo {
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+.conteudo__texto {   
+    color: var(--azul);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px; 
+    padding: 0.2em;     
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+label {
+    color: var(--cinza-escuro);
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
+}
+
+input {
+    font-family: var(--fonte-principal);    
+    background-color: var(--cinza-claro);
+    border-radius: 6px;
+    border: none;
+    box-shadow: 1.5px 1.5px 5px var(--cinza-medio); 
+    padding: 1em;
+    font-size: 12px;
+    text-align: center;       
+}
+
+::placeholder {
+    color: var(--cinza-medio);
+}
+
+button {
+    margin: 0.5em auto 4.5em;    
+    color: var(--branco);
+    display: block;
+    background-color: var(--coral);
+    border: none;
+    border-radius: 6px;
+    padding: 0.5em;    
+    text-decoration: none;
+    width: 40%;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+}
+
+.rodape {
+    background-color: var(--verde);    
+    padding: 3em;
+    text-align: center;
+}
+
+/* estilizando a página de login */
+.conteudo__login {
+    font-size: 16px;
+    color: var(--azul);
+    margin: 2em;
+}
+
+.resgate-senha {
+    color: var(--coral);
+    padding-top: 2em;
+}
+
+.entrar {
+    margin-top: 2em;    
+    color: var(--branco);    
+    background-color: var(--coral);
+    border: none;
+    border-radius: 6px;
+    padding: 0.5em;    
+    text-decoration: none;
+    width: 50%;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+}
+
+.input-login {
+    margin-bottom: 1.5em;
+} 
