@@ -83,7 +83,7 @@ input {
 }
 
 button {
-    margin: 0.5em auto 4.5em;    
+    margin: 1em auto 4.5em;    
     color: var(--branco);
     display: block;
     background-color: var(--coral);
