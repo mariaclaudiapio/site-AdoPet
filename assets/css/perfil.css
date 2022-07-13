@@ -1,0 +1,132 @@
+:root {
+    --azul: #3772FF;
+    --cinza-claro: #F6F6F6;
+    --cinza-medio: #BCBCBC;
+    --cinza-escuro: #737380;
+    --coral: #FC7071;
+    --branco: #FFFFFF;
+    --verde: #36D6AD;
+
+    --fonte-principal: 'Poppins', sans-serif;
+    --fonte-secundaria: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+    background-image:url('../img/foto_perfil.svg'), url('../img/forma_1.svg');    
+    background-repeat: no-repeat;
+    background-position: top 2.7em right 3em, top left;  
+    min-height: 100vh; 
+    font-family: var(--fonte-principal);
+    color: var(--cinza-escuro);
+}
+
+.bg-branca {
+    background-color: var(--branco);
+}
+
+.cabecalho {    
+    padding: 3em;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.cabecalho__imagem {
+    padding-right: 3em;    
+}
+
+.container-perfil__texto {
+    font-size: 16px;
+    color: var(--azul);    
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1.5em; 
+    line-height: 1.2em;   
+}
+
+.container-perfil {    
+    margin: 2em;
+}
+
+.container-perfil__formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: var(--cinza-claro);    
+}
+
+.container-perfil__formulario-titulo {
+    font-size: 21px;
+    font-weight: 600;
+    color: var(--cinza-escuro);
+    text-align: center;
+    padding: 1.5em 0 1em 0;    
+}
+
+.foto-imagem {
+    width: 80px;
+    margin: .5em auto;
+}
+
+.foto-legenda {
+    font-size: 12px;
+    color: var(--coral);
+    text-align: center;
+}
+
+::placeholder {
+    color: var(--cinza-escuro);
+}
+
+
+label,
+.foto-texto {
+    color: var(--azul);
+    font-weight: 600;
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
+    margin-left: 1em;
+}
+
+.input-padrao,
+.input-padrao-textarea {
+    font-family: var(--fonte-principal);
+    background-color: var(--branco);
+    border-radius: 6px;
+    border: none;
+    box-shadow: 1.5px 1.5px 5px var(--cinza-medio);
+    width: 80%; 
+    padding: 1em;
+    font-size: 14px;    
+    align-self: center;     
+}
+
+.input-enviar {
+    margin: 0 auto;  
+    margin-top: 8%;
+    margin-bottom: 8%;  
+    color: var(--branco);
+    font-weight: 600;
+    display: block;
+    background-color: var(--coral);
+    border: none;
+    border-radius: 6px;
+    padding: 0.5em;    
+    text-decoration: none;
+    width: 48%;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+}
+
+.rodape {
+    background-color: var(--verde);
+    color: var(--branco);    
+    padding: 3em;
+    text-align: center;
+}
+
+
+

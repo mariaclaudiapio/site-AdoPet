@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/perfil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Adopet Perfil</title>
+  </head>
+  <body class="bg-branca">
+    <header class="cabecalho">
+      <a href="./index.html"><img src="./assets/img/casa.svg" alt="Página inicial" class="cabecalho__imagem"></a>
+      <a href="#"><img src="./assets/img/mensagens.svg" alt="Caixa de Mensagens" class="cabecalho__imagem"></a>                 
+    </header>
+
+    
+      
+    <section class="container-perfil">
+      <p class="container-perfil__texto">Esse é o perfil que aparece para responsáveis ou ONGS que recebem sua mensagem.</p>
+      <form class="container-perfil__formulario">
+          <h1 class="container-perfil__formulario-titulo">Perfil</h1>
+          <p class="foto-texto">Foto</p>
+          <img src="./assets/img/foto_perfil.svg" alt="foto do perfil" class="foto-imagem">
+          <p class="foto-legenda">Clique na foto para editar</p>
+
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" class="input-padrao" required placeholder="Joana Magalhães"/>
+          <label for="telefone">Telefone</label>
+          <input type="number" id="telefone" class="input-padrao" required placeholder="55 11 XXXXXXXXX"/>
+          <label for="cidade">Cidade</label>
+          <input type="text" id="cidade" class="input-padrao" required placeholder="São Paulo"/>          
+          <label for="sobre">Sobre</label>
+          <textarea
+            cols="70"
+            rows="10"
+            id="mensagem"
+            class="input-padrao input-padrao-textarea"
+            required
+            placeholder="Mussum Ipsum, cacilds vidis litro abertis. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.Copo furadis é disculpa de bebadis, arcu quam euismod magna.Quem num gosta di mé, boa gentis num é.Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget."
+          ></textarea>
+          
+          <input type="submit" value="Salvar" class="input-enviar"/>
+      </form> 
+    </section>
+
+    <footer class="rodape">
+      <p class="rodape__texto">2022 - desenvolvido por Alura</p>
+    </footer>
+  </body>
+</html>
